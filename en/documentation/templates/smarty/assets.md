@@ -131,7 +131,7 @@ You can define module specific assets in the `MyModule/templates/frontOffice/def
 
     {stylesheets source="MyModule" file="assets/css/style.css" template="default"}
         <link href="{$asset_url}" rel="stylesheet" type="text/css" />
-    {stylesheet}
+    {/stylesheets}
 
 The example above Will use the style.css file defined by MyModule, and located in `local/MyModule/templates/frontOffice/default/assets/css` directory.
 
@@ -141,7 +141,7 @@ You may want to use an asset located in another template of the same type (for e
 
     {stylesheets file="assets/css/style.css" template="default"}
         <link href="{$asset_url}" rel="stylesheet" type="text/css" />
-    {stylesheet}
+    {/stylesheets}
 
 The example above will use the style.css file, located in the `assets/css` directory of the `default` front office template (the file path is `templates/frontOffice/default/assets/css/style.css`).
 
@@ -152,7 +152,7 @@ Example usage of this parameter:
 
     {stylesheets file="assets/css/mystyle.css" failsafe=true}
         <link href="{$asset_url}" rel="stylesheet" type="text/css" />
-    {stylesheet}
+    {/stylesheets}
 
 
 ### {images} and {image} ###
